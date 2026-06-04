@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /es
+
+# Crawl-delay: be polite to Google's bot
+Crawl-delay: 1
+
+Sitemap: https://advancedplumbingservices.com/sitemap.xml
