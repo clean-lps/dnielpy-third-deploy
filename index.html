@@ -100,8 +100,24 @@
     <link rel="apple-touch-icon" href="/dnielpy-third-deploy/favicon.svg" />
     <link rel="manifest" href="/manifest.webmanifest" />
 
+    <!-- GitHub Pages SPA bootstrap: must run BEFORE main.tsx so React Router sees the clean path -->
+    <script>
+      (function () {
+        var p = new URLSearchParams(location.search).get("p");
+        if (!p) return;
+        // 404.html encoded '&' as '~and~' to keep them inside the ?p= value — restore them now.
+        var path = p.replace(/~and~/g, "&");
+        var sp = new URLSearchParams(location.search);
+        sp.delete("p");
+        var q = sp.toString().replace(/~and~/g, "&");
+        // basename from vite.config.ts: "/dnielpy-third-deploy/"
+        var target = "/dnielpy-third-deploy" + path + (q ? "?" + q : "") + location.hash;
+        history.replaceState(null, null, target);
+      })();
+    </script>
+
     <title>Advanced Plumbing Emergency Services — 24/7 Emergency Plumber Miami & S.W. Florida</title>
-    <script type="module" crossorigin src="/dnielpy-third-deploy/assets/index-ZXn-O2u0.js"></script>
+    <script type="module" crossorigin src="/dnielpy-third-deploy/assets/index-UfD7hk3b.js"></script>
     <link rel="modulepreload" crossorigin href="/dnielpy-third-deploy/assets/react-vendor-Dr89oruQ.js">
     <link rel="modulepreload" crossorigin href="/dnielpy-third-deploy/assets/radix-DizVi58-.js">
     <link rel="stylesheet" crossorigin href="/dnielpy-third-deploy/assets/index-ciii4_mA.css">
