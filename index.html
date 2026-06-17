@@ -1,136 +1,17 @@
-<!doctype html>
-<html lang="en" class="dark">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta
-      name="description"
-      content="24/7 Emergency Plumbing in Miami & S.W. Florida. Fast response, licensed & insured. Call (305) 755-2124 now."
-    />
-    <meta
-      name="keywords"
-      content="emergency plumber Miami, plumber Fort Myers, 24/7 plumbing, sewer excavation, water heater repair, leak detection, cast iron pipe replacement, drain jetting, commercial plumbing, Miami-Dade plumber, Lee County plumber, Naples plumber, Cape Coral plumber, licensed plumber Florida"
-    />
-    <meta name="author" content="Advanced Plumbing Emergency Services" />
-    <meta name="publisher" content="Advanced Plumbing Emergency Services" />
-    <meta name="copyright" content="Advanced Plumbing Emergency Services" />
-    <meta name="distribution" content="global" />
-    <meta name="rating" content="general" />
-    <meta name="revisit-after" content="7 days" />
-    <meta
-      name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-    />
-    <meta
-      name="googlebot"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-    />
-    <meta name="theme-color" content="#0B1C3F" />
-    <meta name="color-scheme" content="dark light" />
-    <meta name="format-detection" content="telephone=yes" />
-    <meta name="geo.region" content="US-FL" />
-    <meta name="geo.placename" content="Miami, Fort Myers, Naples, Cape Coral" />
-    <meta name="geo.position" content="25.7617;-80.1918" />
-    <meta name="ICBM" content="25.7617, -80.1918" />
-    <link rel="publisher" href="https://www.advancedplumbinginc.com" />
-    <link rel="author" href="https://www.advancedplumbinginc.com/about" />
-
-    <!-- Preconnect external resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="dns-prefetch" href="https://www.advancedplumbinginc.com" />
-
-    <!-- Non-blocking font CSS (display=swap): preload hint, then apply on load (no render block) -->
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@700&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@700&display=swap"
-      />
-    </noscript>
-
-    <!-- Preload brand SVG logo (LCP candidate on dark hero) -->
-    <link rel="preload" as="image" href="/dnielpy-third-deploy/favicon.svg" type="image/svg+xml" />
-
-    <!-- Preload LCP hero image (above-the-fold, critical for LCP) -->
-    <link
-      rel="preload"
-      as="image"
-      href="/dnielpy-third-deploy/images/hero-fleet-primary.webp"
-      type="image/webp"
-      fetchpriority="high"
-    />
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Advanced Plumbing Emergency Services — 24/7 Emergency Plumber Miami & S.W. Florida" />
-    <meta property="og:description" content="24/7 Emergency Plumbing in Miami & S.W. Florida. Fast response, licensed & insured. Sewer, water heaters, leak detection, commercial." />
-    <meta property="og:image" content="https://www.advancedplumbinginc.com/og-default.svg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Advanced Plumbing Emergency Services — 24/7 emergency plumbing across Florida" />
-    <meta property="og:url" content="https://www.advancedplumbinginc.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Advanced Plumbing Emergency Services" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="es_US" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Advanced Plumbing Emergency Services — 24/7 Emergency Plumber" />
-    <meta name="twitter:description" content="Call (305) 755-2124 now. 24/7 emergency plumbing, sewer & excavation, water heaters, leak detection." />
-    <meta name="twitter:image" content="https://www.advancedplumbinginc.com/og-default.svg" />
-    <meta name="twitter:image:alt" content="Advanced Plumbing Emergency Services — 24/7 emergency plumbing across Florida" />
-
-    <!-- Hreflang -->
-    <link rel="alternate" hreflang="en" href="https://www.advancedplumbinginc.com/" />
-    <link rel="alternate" hreflang="es" href="https://www.advancedplumbinginc.com/es" />
-    <link rel="alternate" hreflang="x-default" href="https://www.advancedplumbinginc.com/" />
-
-    <link rel="icon" type="image/svg+xml" href="/dnielpy-third-deploy/favicon.svg" />
-    <link rel="apple-touch-icon" href="/dnielpy-third-deploy/favicon.svg" />
-    <link rel="manifest" href="/dnielpy-third-deploy/manifest.webmanifest" />
-
-    <!-- GitHub Pages SPA bootstrap: must run BEFORE main.tsx so React Router sees the clean path -->
-    <script>
-      (function () {
-        var p = new URLSearchParams(location.search).get("p");
-        if (!p) return;
-        // 404.html encoded '&' as '~and~' to keep them inside the ?p= value — restore them now.
-        var path = p.replace(/~and~/g, "&");
-        var sp = new URLSearchParams(location.search);
-        sp.delete("p");
-        var q = sp.toString().replace(/~and~/g, "&");
-        // basename from vite.config.ts: "/dnielpy-third-deploy/"
-        var target = "/dnielpy-third-deploy" + path + (q ? "?" + q : "") + location.hash;
-        history.replaceState(null, null, target);
-      })();
-    </script>
-
-    <title>Advanced Plumbing Emergency Services — 24/7 Emergency Plumber Miami & S.W. Florida</title>
-    <script type="module" crossorigin src="/dnielpy-third-deploy/assets/index-DsvOEh3D.js"></script>
-    <link rel="modulepreload" crossorigin href="/dnielpy-third-deploy/assets/react-vendor-Dr89oruQ.js">
-    <link rel="modulepreload" crossorigin href="/dnielpy-third-deploy/assets/radix-DizVi58-.js">
-    <link rel="modulepreload" crossorigin href="/dnielpy-third-deploy/assets/icons-BLS9SrGl.js">
-    <link rel="stylesheet" crossorigin href="/dnielpy-third-deploy/assets/index-Bgl7ccye.css">
-  <link rel="manifest" href="/dnielpy-third-deploy/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/dnielpy-third-deploy/registerSW.js"></script></head>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Marvier Insurance & Tax Corp — Your trusted insurance agency in Hialeah Gardens, FL. Auto, home, health, commercial insurance and tax preparation." />
+    <meta name="theme-color" content="#1E3A6B" />
+    <title>Marvier Insurance & Tax Corp</title>
+    <script type="module" crossorigin src="/assets/index-BxSnQkPK.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-BiiKAHnb.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BQsIWXee.css">
+  </head>
   <body>
     <div id="root"></div>
-    <noscript>
-      <div style="padding:24px;font-family:system-ui;color:#fff;background:#0B1C3F;text-align:center">
-        <h1 style="margin:0 0 8px;font-size:24px">Advanced Plumbing Emergency Services</h1>
-        <p style="margin:0 0 12px">For 24/7 emergency plumbing, call <a style="color:#00C2FF" href="tel:+13057552124">(305) 755-2124</a>.</p>
-        <p style="margin:0;font-size:14px;opacity:0.7">This site requires JavaScript for full functionality.</p>
-      </div>
-    </noscript>
   </body>
 </html>
