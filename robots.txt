@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /login
-Disallow: /dashboard
-Disallow: /admin
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://clean-lps.github.io/dnielpy-third-deploy/sitemap.xml
